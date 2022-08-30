@@ -1,0 +1,65 @@
+.title {
+    text-align: center;
+    margin-top: 85px;
+}
+.title h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 58px;
+    color:#000000;
+}
+.title span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 25.78px;
+    color: #969CBA;
+    margin-left: 190px;
+    text-transform: capitalize;
+}
+.parentBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.childBoxOne {
+    width: 652px; 
+    height: 448px;
+    border-radius: 10px; 
+    background-color: #FFFFFF; 
+    text-align: center;
+
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+
+    /* align-items: center; */
+    /* flex-direction: column; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.childBoxOne h4{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    color: #969CBA;
+    margin-top: 65px;
+}
+.btn{
+    background: #969CBA;
+    width: 232px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #969CBA;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 72px;
+}

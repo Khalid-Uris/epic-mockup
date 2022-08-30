@@ -1,0 +1,53 @@
+
+.box {
+    width: 652px; 
+    height: 448px; 
+    border-radius: 10px; 
+    background-color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box h6 {
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: bold;
+    color: #494E67;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box p {
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    /* font-weight: lighter; */
+    color: #969CBA;
+}
+.btn{
+    background: #969CBA;
+    width: 197px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.logoclassName{
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: lighter; */
+    font-size: 16px;
+    line-height: 25px;
+    color: #969CBA;
+    padding-left: 36px;
+    padding-top: 21px;
+    
+}
