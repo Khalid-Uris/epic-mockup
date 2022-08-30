@@ -1,54 +1,43 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
-import styles from '../css/MultiStep.module.css'
-import ConvertPng from './ConvertPng';
-
+import React, { useRef } from "react";
+import styles from "../css/MultiStep.module.css";
+import Box from "./Box";
 
 // const redirect = useNavigate();
 
-const UploadLogoBox = ({setImageData}) => {
-    const fileInput=useRef();
+const UploadLogoBox = ({ setImageData }) => {
+  const fileInput = useRef();
 
-    const selectFile = () => {
-        fileInput.current.click();
-    }
+  const selectFile = () => {
+    fileInput.current.click();
+  };
 
-    const [image, setImage]=useState("");
-    const imageChangeHandle=(e)=>{
-        setImage(URL.createObjectURL(e.target.files[0]))
-    }
+  const imageChangeHandle = (e) => {
+    setImageData(URL.createObjectURL(e.target.files[0]));
+  };
 
-    useEffect(() => {
-        setImageData(image);
-    
-    }, [])
-    
   return (
-    <section>
-        <div className="container my-4">
-            <div className="row">
-                <div className="col-md-12 d-flex justify-content-center">
-                    <div className={styles.box}>
-                        <h6>create text</h6>
-                        <p>or</p>
-                        
-                        <input type="file" style={{display:"none"}} ref={fileInput} onChange={imageChangeHandle}/>
-                        <button onClick={selectFile} className={styles.btn}>Upload Logo</button>
+    <Box className="justify-content-center">
+      <h6>create text</h6>
+      <p>or</p>
 
-                        <div className={styles.logoclassName}>
-                            Logo should be in the standard <br />
-                            format png.
-                        </div>
-                        
-                        {/* {image ? } */}
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+      <input
+        type="file"
+        style={{ display: "none" }}
+        ref={fileInput}
+        onChange={imageChangeHandle}
+      />
+      <button onClick={selectFile} className={styles.btn}>
+        Upload Logo
+      </button>
 
-    </section>
-  )
-}
+      <div className={styles.logoclassName}>
+        Logo should be in the standard <br />
+        format png.
+      </div>
 
-export default UploadLogoBox
+      {/* {image ? } */}
+    </Box>
+  );
+};
+
+export default UploadLogoBox;
