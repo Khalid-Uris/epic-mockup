@@ -16,8 +16,8 @@ const UploadLogoBox = ({ setImageData }) => {
   };
 
   return (
-    <Box className="justify-content-center">
-      <h6>create text</h6>
+    <Box className="d-flex justify-content-center">
+      <h6 className={styles.heading}>create text</h6>
       <p>or</p>
 
       <input
