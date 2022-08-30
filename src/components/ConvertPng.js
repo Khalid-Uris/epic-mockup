@@ -1,22 +1,25 @@
 import React, { useState } from 'react'
+import style from '../css/ConvertPng.css';
 
 const ConvertPng = ({imageData}) => {
    
-  
 
-    // const [file, setFile]=useState("");
 
-    // const handleChange=(e)=>{
-    //     setFile(URL.createObjectURL(e.target.files[0]))
-    // }
+
   return (
-    <div>
-      {/* <input type="file" onChange={handleChange}/> */}
-      {/* {props.imageData} */}
-      <h2>Convert To Png</h2>
-      <img src={imageData} alt="" />
-      {/* <img src={props.imageData} alt="error" /> */}
-    </div>
+    <section>
+        <div className="container">
+            <div className="row ">
+              <div className="col-md-12">
+               <div className="box">
+
+               </div>
+            </div>
+          </div>
+        </div>
+        <img src={imageData} alt="" />
+    </section>
+ 
   )
 }
 

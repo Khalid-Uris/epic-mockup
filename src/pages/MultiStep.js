@@ -1,19 +1,20 @@
-import React, { useState } from 'react'
-import ConvertPng from '../components/ConvertPng'
-import Topbar from '../components/Topbar'
-import UploadLogoBox from '../components/UploadLogoBox'
+import React, { useState } from "react";
+import ConvertPng from "../components/ConvertPng";
+import Topbar from "../components/Topbar";
+import UploadLogoBox from "../components/UploadLogoBox";
 
 const MultiStep = () => {
-
-  
   const [image, setImage] = useState("");
   return (
     <main>
-        <Topbar/>
-        <UploadLogoBox setImageData={setImage}/>
-        <ConvertPng imageData={image}/>
+      <Topbar />
+      {image ? (
+        <ConvertPng imageData={image} />
+      ) : (
+        <UploadLogoBox setImageData={setImage} />
+      )}
     </main>
-  )
-}
+  );
+};
 
-export default MultiStep
+export default MultiStep;

@@ -1,0 +1,11 @@
+.box {
+  width: 652px;
+  height: 448px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
