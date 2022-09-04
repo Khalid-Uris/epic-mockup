@@ -1,5 +1,5 @@
-/* eslint-disable react/no-unused-prop-types */
 import React from "react";
+import PropTypes from "prop-types";
 import MultiStepContext from "./MultiStepContext";
 
 function Step(props) {
@@ -11,10 +11,10 @@ function Step(props) {
     );
   }
 
-  const { selectedItemId } = context;
+  const { activeStepId } = context;
   const { id, children } = props;
 
-  const isSelected = selectedItemId === id;
+  const isSelected = activeStepId === id;
 
   return (
     <div
@@ -25,5 +25,15 @@ function Step(props) {
     </div>
   );
 }
+
+Step.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  iconLink: PropTypes.string,
+};
+
+Step.defaultProps = {
+  iconLink: null,
+};
 
 export default Step;

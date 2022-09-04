@@ -1,25 +1,25 @@
 import React from "react";
 
 const MultiStepContext = React.createContext({
-  selectedItemId: null,
-  defaultActiveId: null,
+  activeStepId: null,
+  defaultActiveStepId: null,
   handleSelectItem: () => {},
 });
 
-export function MultiStepContextProvider({ defaultActiveItem, children }) {
-  const [selectedItem, setSelectedItem] = React.useState(defaultActiveItem);
+export function MultiStepContextProvider({ defaultActiveStepId, children }) {
+  const [activeStep, setActiveStep] = React.useState(defaultActiveStepId);
 
   const handleSelectItem = (item) => {
-    setSelectedItem(item);
+    setActiveStep(item);
   };
 
   const contextValues = React.useMemo(
     () => ({
-      selectedItemId: selectedItem,
-      defaultActiveId: defaultActiveItem,
+      activeStepId: activeStep,
+      defaultActiveStepId: defaultActiveStepId,
       handleSelectItem,
     }),
-    [selectedItem, defaultActiveItem]
+    [activeStep, defaultActiveStepId]
   );
 
   return (
@@ -30,9 +30,9 @@ export function MultiStepContextProvider({ defaultActiveItem, children }) {
 }
 
 export function useMultiStep() {
-  const { defaultActiveId, selectedItemId, handleSelectItem } =
+  const { defaultActiveStepId, activeStepId, handleSelectItem } =
     React.useContext(MultiStepContext);
-  return { defaultActiveId, selectedItemId, setSelectedItem: handleSelectItem };
+  return { defaultActiveStepId, activeStepId, setActiveStep: handleSelectItem };
 }
 
 export default MultiStepContext;
