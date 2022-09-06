@@ -1,10 +1,13 @@
 import React, { useRef } from "react";
 import styles from "../css/MultiStep.module.css";
 import Box from "./Box";
+import { useMultiStep } from "./MultiStepForm/components/MultiStepContext";
 
 // const redirect = useNavigate();
 
 const UploadLogoBox = ({ setImageData }) => {
+  const { setActiveStep } = useMultiStep();
+
   const fileInput = useRef();
 
   const selectFile = () => {
@@ -13,6 +16,7 @@ const UploadLogoBox = ({ setImageData }) => {
 
   const imageChangeHandle = (e) => {
     setImageData(URL.createObjectURL(e.target.files[0]));
+    setActiveStep("stepTwo"); // pass whatever step id you want to set
   };
 
   return (

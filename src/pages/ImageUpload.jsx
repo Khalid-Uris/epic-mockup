@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import ConvertPng from "../components/ConvertPng";
-import Topbar from "../components/Topbar";
 import UploadLogoBox from "../components/UploadLogoBox";
 
-const MultiStep = () => {
-  const [image, setImage] = useState("");
+const ImageUpload = ({ image, setImage }) => {
   return (
     <main>
-      <Topbar />
       {image ? (
         <ConvertPng imageData={image} />
       ) : (
@@ -17,4 +14,4 @@ const MultiStep = () => {
   );
 };
 
-export default MultiStep;
+export default ImageUpload;
