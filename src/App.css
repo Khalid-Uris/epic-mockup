@@ -3,3 +3,54 @@ main {
   /* background: #494E67; */
   min-height: 100vh;
 }
+
+/* Multi Step CSS */
+
+.multi-step-form {
+  padding: 1rem;
+}
+
+.steps-head-wrapper {
+  margin-bottom: 1rem;
+}
+
+.steps-head {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 0;
+}
+
+.step-link {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.step-link p,
+svg {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #a5a1a1;
+}
+
+.head-items-separator {
+  height: 2px;
+  background-color: #a5a1a1;
+  width: 100%;
+  min-width: 2rem;
+  margin: 0 1rem;
+}
+
+/* .step-item {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	} */
+
+.step-link {
+  white-space: nowrap;
+}
