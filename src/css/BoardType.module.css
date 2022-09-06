@@ -1,0 +1,48 @@
+.btnParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 90px;
+}
+.btnBrandType {
+  background: #969cba;
+  width: 240px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btnNewLogo {
+  background: #969cba;
+  width: 240px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.paraOr {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #969cba;
+  text-align: center;
+  padding-top: 10px;
+}

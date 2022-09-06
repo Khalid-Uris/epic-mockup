@@ -3,10 +3,7 @@ import style from '../css/ConvertPng.module.css';
 import Box from './Box';
 
 const ConvertPng = ({ imageData }) => {
-
-
-
-
+  
   return (
     
       <Box  className='d-flex justify-content-center'>

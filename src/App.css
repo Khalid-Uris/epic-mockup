@@ -1,6 +1,5 @@
 main {
-     background: #FBFBFB;
-     /* background: #494E67; */
-     
- }
-
+  background: #fbfbfb;
+  /* background: #494E67; */
+  min-height: 100vh;
+}
